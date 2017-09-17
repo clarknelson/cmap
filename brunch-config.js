@@ -3,14 +3,13 @@
 module.exports.files = {
   javascripts: {
     joinTo: {
-      'vendor.js': /^(?!app)/, // Files that are not in `app` dir.
-      'app.js': /^app/
+      'js/vendor.js': /^(?!app)/, // Files that are not in `app` dir.
+      'js/app.js': /^app/
     }
   },
   stylesheets: {
     joinTo: {
-      'css/app.css': 'app/main.scss',
-      'css/app2.css': 'app/main2.css'
+      'css/app.css': 'app/style/main.scss'
     }
   }
 };
@@ -18,4 +17,8 @@ module.exports.files = {
 module.exports.plugins = {
   babel: {presets: ['latest']},
   sass: { mode: 'native' }
+};
+
+module.exports.paths = {
+  public: 'docs'
 };

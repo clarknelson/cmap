@@ -1,0 +1,1 @@
+{"version":3,"sources":["app/style/main.scss"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA","file":"docs/css/app.css","sourcesContent":["body {\n  background: white;\n  color: black; }\n\n"]}

@@ -2,10 +2,7 @@
 
 module.exports.files = {
   javascripts: {
-    joinTo: {
-      'js/vendor.js': /^(?!app)/, // Files that are not in `app` dir.
-      'js/app.js': /^app/
-    }
+    joinTo: 'js/app.js'
   },
   stylesheets: {
     joinTo: {
@@ -15,7 +12,7 @@ module.exports.files = {
 };
 
 module.exports.plugins = {
-  babel: {presets: ['latest']},
+  babel: {presets: ['env','latest','es2015']},
   sass: { mode: 'native' }
 };
 

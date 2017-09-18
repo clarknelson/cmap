@@ -635,6 +635,7 @@ body {
   height: 2.828em;
   padding: 0;
   padding-left: 4.242em;
+  padding-right: 1.414em;
   display: flex;
   align-items: center;
   flex-wrap: nowrap; }
@@ -645,7 +646,7 @@ body {
     font-weight: 800;
     cursor: pointer; }
     #breadcrumbs .breadcrumb .share-col a:hover svg g {
-      fill: black !important; }
+      fill: #111921 !important; }
   #breadcrumbs .breadcrumb .share-col span {
     padding-left: 1em;
     transform: translateY(-0.2em); }
@@ -682,7 +683,7 @@ body {
     color: #3C5976; }
     #breadcrumbs .breadcrumb a:hover {
       text-decoration: none;
-      color: black; }
+      color: #111921; }
 
 #main-header {
   position: relative;

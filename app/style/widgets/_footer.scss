@@ -1,0 +1,28 @@
+#footer{
+  position: relative;
+  bottom: 0; left: 0;
+  width: 100%;
+  background: $light-blue;
+
+
+  .container{
+    width: 100%;
+    padding: 0 #{$unit * 3};
+  }
+
+  .row{
+    display: flex;
+    align-items: center;
+    padding-top: 0.3em;
+    height: $unit * 2;
+  }
+
+  span{
+    font-size: $size-1;
+    font-weight: 800;
+  }
+
+  span,a{
+    color: $primary;
+  }
+}

@@ -4,9 +4,7 @@
   .breadcrumb{
     margin-bottom: $unit * 2;
     height: $unit * 2;
-    padding: 0;
-    padding-left: $unit * 3;
-    padding-right: $unit;
+    padding: 0 #{$unit * 3};
 
     display: flex;
     align-items: center;

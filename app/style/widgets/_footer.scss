@@ -1,0 +1,11 @@
+#footer{
+  position: fixed;
+  bottom: 0;
+  background: $light-blue;
+  width: 100%;
+  padding: 0 #{$unit * 3};
+
+  .row{
+    width: auto;
+  }
+}

@@ -10,9 +10,10 @@
   	justify-content: space-between;
   	height: $unit * 4;
 
-    a.logo{
+    .logo{
     	display: flex;
     	align-items: center;
+      font-size: $size0;
     	padding-left: $unit * 3;
 
     	&:hover{
@@ -26,6 +27,12 @@
     		width: $logo-size !important;
     		height: $logo-size !important;
     	}
+
+      a{
+        &:hover{
+          text-decoration: none;
+        }
+      }
 
     	span{
       	font-size: #{$logo-size * 1.3};

@@ -10,11 +10,16 @@
     align-items: center;
     flex-wrap: nowrap;
 
-    .share-col{
+    .share-button{
+      position: absolute;
+      height: $unit * 2;
+      display: flex;
+      align-items: center;
 
       a{
         display: inline-flex;
-        align-items: baseline;
+        align-items: center;
+        height: $size0;
         font-size: $size-1;
         font-weight: 800;
         cursor: pointer;
@@ -29,8 +34,8 @@
       }
 
       span{
-        padding-left: $size0;
-        transform: translateY(-0.2em);
+        padding-left: $size-1;
+        transform: translateY(0.175em);
       }
 
       svg{
@@ -43,12 +48,14 @@
       height: $size0;
       line-height: $size0;
       // overflow-y: scroll;
-
+      text-indent: 5em each-line;
+      
       .home{
         cursor: pointer;
         position: relative;
         border-left: none;
         padding: 0;
+
         &:after{
           content: '';
           position: absolute;

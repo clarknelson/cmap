@@ -1,16 +1,32 @@
 body{
   font-size: 21px;
+  @if($debug){
+    border-top: 2px solid red;
+  }
+
   @include tv(){
     font-size: 19px;
+    @if($debug){
+      border-top: 2px solid orange;
+    }
   }
   @include desktop(){
     font-size: 17px;
+    @if($debug){
+      border-top: 2px solid yellow;
+    }
   }
   @include tablet(){
     font-size: 15px;
+    @if($debug){
+      border-top: 2px solid green;
+    }
   }
   @include phone(){
     font-size: 13px;
+    @if($debug){
+      border-top: 2px solid blue;
+    }
   }
 }
 

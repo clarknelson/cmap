@@ -10649,6 +10649,15 @@ console.log('hello world');
 
 });
 
+require.register("scripts/main.js", function(exports, require, module) {
+"use strict";
+
+$(document).ready(function () {
+  // lets write some search box code
+});
+
+});
+
 require.alias("jquery/dist/jquery.js", "jquery");
 require.alias("process/browser.js", "process");process = require('process');require.register("___globals___", function(exports, require, module) {
   

@@ -1,37 +1,31 @@
 body{
-  font-size: 21px;
+  font-size: 20px;
   @if($debug){
     border-top: 2px solid red;
   }
 
   @include tv(){
-    font-size: 19px;
+    font-size: 18px;
     @if($debug){
       border-top: 2px solid orange;
     }
   }
   @include desktop(){
-    font-size: 17px;
+    font-size: 16px;
     @if($debug){
       border-top: 2px solid yellow;
     }
   }
   @include tablet(){
-    font-size: 15px;
+    font-size: 14px;
     @if($debug){
       border-top: 2px solid green;
     }
   }
   @include phone(){
-    font-size: 13px;
+    font-size: 12px;
     @if($debug){
       border-top: 2px solid blue;
     }
   }
-}
-
-.h2{
-  font-size: $size2;
-  font-weight: 500;
-  line-height: 1.1em;
 }

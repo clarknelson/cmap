@@ -15,7 +15,3 @@ module.exports.plugins = {
   babel: {presets: ['env','latest','es2015']},
   sass: { mode: 'native' }
 };
-
-module.exports.paths = {
-  public: 'docs'
-};

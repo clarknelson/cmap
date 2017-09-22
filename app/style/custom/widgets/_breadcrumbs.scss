@@ -1,5 +1,5 @@
 #breadcrumbs{
-  // padding: $size0;
+  border-top: 1px solid $light-blue;
 
   .breadcrumb{
     margin-bottom: $unit * 2;
@@ -9,6 +9,14 @@
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
+
+
+    @include tablet(){
+      padding: 0 $unit * 2;
+    }
+    @include phone(){
+      padding: 0 $unit;
+    }
 
     .share-button{
       position: absolute;
@@ -44,11 +52,14 @@
       }
     }
 
+
     .trail-col{
       height: $size0;
       line-height: $size0;
-      // overflow-y: scroll;
-      text-indent: 5em each-line;
+
+      $indent: 0.5em;
+      text-indent: - $indent;
+      margin-left: $indent;
 
       .home{
         cursor: pointer;
@@ -87,13 +98,40 @@
       }
     }
 
+    @include tablet(){
+      flex-wrap: wrap;
+      height: auto !important;
 
+      .share-button{
+        position: relative;
+        height: $unit * 2;
+      }
+      .trail-col{
+        height: auto;
+        text-indent: 0;
+        margin: 0;
+        padding-left: 0 !important;
+      }
 
-    span, a{
-      // line-height: $size0;
-      // height: $size0;
+      .sr-only{
+        display: inline-block;
+        position: relative;
+        width: auto;
+        height: auto;
+        overflow: auto;
+        clip: auto;
+        margin: auto;
+      }
+      .home{
+        &:after{
+          display: none;
+        }
+      }
     }
 
+    span,a{
+      line-height: 1em;
+    }
     a{
       color: $primary;
       &:hover{

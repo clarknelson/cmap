@@ -1,0 +1,116 @@
+#main-header{
+  position: relative;
+	width: 100%;
+  height: auto;
+	background: #fff;
+
+  .nav-row-one{
+  	display: flex;
+  	align-items: center;
+  	justify-content: space-between;
+  	height: $unit * 4;
+
+
+    .left{
+      display: flex;
+      align-items: center;
+    }
+
+    .right{
+      flex: 0 0 $size8;
+      margin-right: $unit;
+    }
+
+    .side-nav-trigger{
+      display: none;
+
+      @include desktop(){
+        display: block;
+      }
+    }
+
+    .hamburger{
+      padding-left: $unit * 3;
+      padding-right: $unit * 2;
+      outline: none;
+      
+      @include tablet(){
+        padding-right: $size0;
+        padding-left: $unit * 2;
+      }
+      @include phone(){
+        padding-left: $unit;
+      }
+
+      .hamburger-box{
+        height: $unit;
+      }
+      .hamburger-inner,
+      .hamburger-inner::before,
+      .hamburger-inner::after{
+        background: $dark-blue;
+        width: $size2;
+        height: 3px;
+      }
+    }
+
+    .logo{
+      padding-left: $unit * 3;
+
+      @include desktop(){
+        padding-left: 0;
+      }
+      @include tablet(){
+        span{
+          display: none;
+        }
+      }
+    }
+
+    .input-group{
+    	flex: 0 0 auto;
+    }
+
+  }
+
+
+  .nav-row-two{
+    border-bottom: none;
+    @include desktop(){
+      display: none;
+    }
+  }
+
+  .main-nav-links{
+  	padding-left: $unit * 3;
+
+  	li{
+  		display: inline-flex;
+  		align-items: center;
+      height: $unit * 2;
+      margin-right: $size0;
+  		border-top: 2px solid transparent;
+
+      &:hover{
+  			border-top-color: darken($primary, 10%);
+  		}
+
+      &:last-of-type{
+        margin-right: 0;
+      }
+
+  		a{
+  			display: block;
+  			color: $primary;
+        font-weight: 800;
+
+  			&:hover{
+  				color: darken($primary, 10%);
+  				text-decoration: none;
+  			}
+  		}
+
+  	}
+  }
+
+}

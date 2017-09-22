@@ -11,7 +11,13 @@ module.exports.files = {
   }
 };
 
+module.exports.modules = {
+  autoRequire: {
+    'js/app.js': ['scripts/main.js']
+  }
+};
+
 module.exports.plugins = {
-  babel: {presets: ['env','latest','es2015']},
+  babel: {presets: ['latest','env','es2015']},
   sass: { mode: 'native' }
 };
